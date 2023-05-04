@@ -1,0 +1,27 @@
+1.
+ZALE¯NOŒCI FUNKCYJNE:
+id_produktu -> nazwa_produktu, cena_produktu, VAT
+nazwa_produktu -> VAT
+suma_netto, VAT -> suma_brutto
+suma_brutto, VAT -> suma_netto
+suma_netto, suma_brutto -> VAT
+id_klienta, data_zamówienia -> iloœæ
+nazwa_klienta, data_zamówienia -> iloœæ
+id_klienta -> nazwa_klienta
+
+2.
+KLUCZE KANDYDUJ¥CE:
+id_klienta + data_zamówienia
+nazwa_klienta + data_zamówienia
+
+3.
+ZALE¯NOŒCI FUNKCYJNE:
+id_pomieszczenia -> numer_pomieszczenia, id_budynku, liczba_okien, liczba_drzwi, powierzchnia
+kod_pocztowy -> miasto
+ulica, miasto -> kod_pocztowy
+powierzchnia -> liczba_okien
+id_budynku -> ulica, miasto, kod_pocztowy
+
+KLUCZE KANDYDUJ¥CE:
+id_pomieszczenia
+numer_pomieszczenia + id_budynku
